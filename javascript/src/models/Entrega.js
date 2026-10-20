@@ -1,29 +1,28 @@
 const {DataTypes} = require('sequelize');
 const sequelize = require('../config/database');
 
-const Cliente = sequelize.define('Cliente', {
-    id_cliente: {
+const Entrega = sequelize.define('Entrega', {
+    id_entrega: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
     },
-    nome: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    email: {
+    cod_rastreio: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
     },
-    cpf: {
-        type: DataTypes.STRING,
+    status: {
+        type: DataTypes.ENUM('pendente', 'em transito', 'entregue', 'cancelado'),
         allowNull: false,
-        unique: true,
     },
-    num_de_tel: {
-        type: DataTypes.STRING,
-        alowNull: false,
+    data_entrega: {
+        type: DataTypes.DATE,
+        allowNull: false,
+    },
+    data_saida: {
+        type: DataTypes.DATE,
+        allowNull: false,
     },
     cep: {
         type: DataTypes.STRING,
@@ -32,7 +31,7 @@ const Cliente = sequelize.define('Cliente', {
     endereco: {
         type: DataTypes.STRING,
         allowNull: false,
-    },
+    }
 });
 
-module.exports = Cliente;
+module.exports = Entrega;

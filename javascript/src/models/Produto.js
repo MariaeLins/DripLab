@@ -24,8 +24,12 @@ const Produto = sequelize.define('Produto', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    tamanho: {
-        type: DataTypes.STRING,
+    tamanho_roupa: {
+        type: DataTypes.ENUM('PP', 'P', 'M', 'G', 'GG'),
+        allowNull: false,
+    },
+    tamanho_calcado: {
+        type: DataTypes.ENUM('33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45'),
         allowNull: false,
     },
     cor: {
