@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Perfil | DripLab</title>
+</head>
+<body id="perfil">
+    <div id="container-principal">
+        <header id="cabecalho-perfil">
+            <div class="home">
+                <a href="../html/index.html" class="botao-home">
+                    <img src="../img/icone-home.png" alt="Home">
+                </a>
+            </div>
+        </header>
+
+        <div class="sua-foto">
+            <img src="../img/sua-foto.png" alt="Sua Foto">
+        </div>
+
+        <p class="seus-dados">SEUS DADOS</p>
+
+        <p class="info-perfil">
+            Nome: <span id="perfil-nome"></span>
+        </p>
+
+        <p class="info-perfil">
+            E-mail: <span id="perfil-email"></span>
+        </p>
+
+        <p class="info-perfil">
+            Telefone: <span id="perfil-telefone"></span>
+        </p>
+
+        <p class="info-perfil">
+            CEP: <input type="text" id="perfil-cep" readonly>
+        </p>
+
+        <p class="info-perfil">
+            Endereço: <input type="text" id="perfil-endereco" readonly>
+        </p>
+
+        <button type="button" id="salvar-endereco">
+            SALVAR
+        </button>
+
+        <button type="button" id="botao-sair">
+            SAIR DA CONTA
+        </button>
+
+        <footer>
+            <div class="links-pag">
+                <a href="../html/cadastro.html">Cadastro</a>
+                <a href="../html/carrinho.html">Meu Carrinho</a>
+                <a href="../html/index.html">Peças Drip</a> 
+            </div>
+
+            <div class="contato">
+                <h2>Fale Conosco</h2> 
+                <p>(21) 1234-5678
+                </p>
+
+                <h2>Central de Atendimento</h2>
+                <p>Segunda a Sexta: 8h às 18h</p>
+
+                <h2>Nossas Redes Sociais</h2> 
+                <p>Instagram: @driplabswag_ 
+                <p>Facebook: driplabswag01</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="../js/api.js"></script>
+    <script src="../js/perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastro | DripLab</title>
+</head>
+<body id="cadastro">
+
+    <a href="./index.html" class="icone-home">
+        <img src="../img/icone-home.png" alt="Página inicial">
+    </a>
+
+    <img src="../img/icone-usuario.png" class="icone-usuario" alt="icone de usuário">
+    <form id="form-cadastro" action="/cadastrar" method="post">
+        <input type="text" id="nome" name="nome" placeholder="NOME" class="cadastro" required>
+        <input type="email" id="email" name="email" placeholder="E-MAIL" class="cadastro" required>
+        <input type="tel" id="telefone" name="telefone" placeholder="TELEFONE" class="cadastro" required>
+        <input type="password" id="senha" name="senha" placeholder="SENHA" class="cadastro" required>
+        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="CONFIRMAR SENHA" class="cadastro" required>
+        <input type="submit" value="Cadastrar" class="botao-cadastro">
+    </form>
+
+    <p class="ou">Você também pode cadastrar pelo:</p>
+
+    <div id="opcoes-de-cadastro">
+        <a href="#" class="botao-facebook">
+            <img src="../img/icone-facebook.png" alt="Facebook">
+        </a>
+        ou
+        <a href="#" class="botao-google">
+            <img src="../img/icone-google.png" alt="Google">
+        </a>
+    </div>
+
+    <div class="fazer-login">
+        <p >Não tem cadastro? 
+            <a href="../html/login.html">Faça login!</a>
+        </p>
+    </div>
+    
+    <footer>
+        <div class="container-cartao">
+            <img src="../img/cartao-roxo.png" class="cartao-roxo" alt="foto de cartão roxo com raio amarelo no canto superior esquerdo">
+            <div id="info-footer">
+                <div class="info">
+                    <h2>FALE CONOSCO</h2> 
+                    <h3>(21) 1234-5678</h3>
+                </div>
+                <div class="info">
+                    <h2>CENTRAL DE ATENDIMENTO</h2> 
+                    <h3>Segunda a Sexta: 8h às 18h</h3>
+                </div>
+                <div class="info">
+                    <h2>NOSSAS REDES SOCIAIS</h2>
+                    
+                    <div class="redes">
+                        <h3>INSTAGRAM: @driplabswag_</h3>
+                        <h3>FACEBOOK: driplabswag01</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/api.js" defer></script>
+    <script src="../js/cadastro.js" defer></script>
+</body>
+</html>

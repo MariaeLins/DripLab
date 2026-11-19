@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Produto | DripLab</title>
+</head>
+
+<body id="pagina-produto">
+
+    <div id="container-home">
+        <h3 id="texto-rotativo">ENTRE EM CONTATO CONOSCO!</h3>
+    </div>
+
+
+    <header id="cabecalho-home">
+
+        <div class="icones-superiores">
+
+            <div class="jogo-container">
+                <a href="https://gb-rodrigues.itch.io/drip-lab" class="botao-jogo">
+                    <img src="../img/icone-jogo.png" alt="Jogo">
+                </a>
+            </div>
+
+            <div class="atalhos-direita">
+
+                <div class="pesquisa-container">
+                    <button class="botao-lupa" id="abrir-pesquisa" type="button">
+                        <img src="../img/icone-pesquisa.png" alt="Pesquisar">
+                    </button>
+                </div>
+
+                <a href="./perfil.html" class="botao-perfil">
+                    <img src="../img/icone-perfil-home.png" alt="Meu perfil">
+                </a>
+
+                <a href="./carrinho.html" class="botao-carrinho">
+                    <img src="../img/icone-carrinho.png" alt="Carrinho">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="logo-home">
+            <img src="../img/DripLab_Logo.gif" alt="Logo DripLab" width="600">
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./pecas.html">PEÇAS</a></li>
+                <li><a href="./moletons.html">MOLETONS</a></li>
+                <li><a href="./novidades.html">NOVIDADES</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div id="janela-pesquisa">
+        <div class="conteudo-pesquisa">
+            <form id="form-pesquisa">
+                <input
+                    type="text"
+                    id="campo-pesquisa"
+                    placeholder="Pesquisar swag..."
+                >
+            </form>
+
+            <div class="pesquisas-recentes">
+                <p>Produtos vistos recentemente:</p>
+                <div class="itens-recentes" id="itens-recentes"></div>
+            </div>
+
+            <div class="resultados-pesquisa" id="resultados-pesquisa">
+                <p class="titulo-resultados">Resultados da pesquisa:</p>
+                <div class="lista-resultados" id="lista-resultados"></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="detalhes-produto">
+
+        <div class="imagem-detalhe">
+            <img id="imagem-detalhe" src="" alt="">
+        </div>
+
+        <section class="informacoes-detalhe">
+            <p id="categoria-detalhe" class="categoria-detalhe"></p>
+            <h2 id="nome-detalhe"></h2>
+            <p id="preco-detalhe" class="preco-detalhe"></p>
+            <p id="descricao-detalhe"></p>
+
+            <div id="opcoes-tamanho-container" class="opcao-detalhe">
+                <label for="tamanho-detalhe">Tamanho:</label>
+                <select id="tamanho-detalhe"></select>
+            </div>
+
+            <div id="opcoes-cor-container" class="opcao-detalhe">
+                <label for="cor-detalhe">Cor:</label>
+                <select id="cor-detalhe"></select>
+            </div>
+
+            <label for="quantidade-detalhe">Quantidade:</label>
+            <input type="number" id="quantidade-detalhe" min="1" value="1">
+
+            <button id="adicionar-carrinho-detalhe" type="button">
+                ADICIONAR AO CARRINHO
+            </button>
+
+            <p id="mensagem-produto"></p>
+        </section>
+
+    </main>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/catalogo.js"></script>
+    <script src="../js/produto.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>DripLab</title>
+</head>
+
+<body id="home">
+
+    <div id="container-home">
+        <h3 id="texto-rotativo">ENTRE EM CONTATO CONOSCO!</h3>
+    </div>
+
+    <header id="cabecalho-home">
+
+        <div class="icones-superiores">
+
+            <div class="jogo-container">
+                <a href="https://gb-rodrigues.itch.io/drip-lab" class="botao-jogo">
+                    <img src="../img/icone-jogo.png" alt="Jogo">
+                </a>
+            </div>
+
+            <div class="atalhos-direita">
+
+                <div class="pesquisa-container">
+                    <button class="botao-lupa" id="abrir-pesquisa" type="button">
+                        <img src="../img/icone-pesquisa.png" alt="Pesquisar">
+                    </button>
+                </div>
+
+                <div class="meu-perfil-container">
+                    <a href="../html/perfil.html" class="botao-perfil">
+                        <img src="../img/icone-perfil-home.png" alt="Meu perfil">
+                    </a>
+                </div>
+
+                <a href="./carrinho.html" class="botao-carrinho">
+                    <img src="../img/icone-carrinho.png" alt="Carrinho">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="logo-home">
+            <img src="../img/DripLab_Logo.gif" alt="Logo DripLab" width="600">
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#drip">VOCÊ E SEU DRIP</a></li>
+                <li><a href="./parceria.html">PARCERIAS</a></li>
+                <li><a href="#sobre">SOBRE A MARCA</a></li>
+                <li><a href="./novidades.html">NOVIDADES</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- JANELA DE PESQUISA -->
+
+    <div id="janela-pesquisa">
+
+        <div class="conteudo-pesquisa">
+
+            <form id="form-pesquisa">
+
+                <input
+                    type="text"
+                    id="campo-pesquisa"
+                    placeholder="O que você procura?"
+                >
+
+                <button type="submit" class="botao-enviar">
+                    →
+                </button>
+
+            </form>
+
+            <div class="pesquisas-recentes">
+
+                <p>Produtos vistos recentemente:</p>
+
+                <div class="itens-recentes" id="itens-recentes"></div>
+
+            </div>
+
+            <div class="resultados-pesquisa" id="resultados-pesquisa">
+
+                <p class="titulo-resultados">Resultados da pesquisa:</p>
+
+                <div class="lista-resultados" id="lista-resultados"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!-- GALERIA DE MOLETONS -->
+
+<h2 id="drip">MOLETONS DRIPLAB</h2>
+
+<div class="galeria-acessorios">
+
+    <!-- MOLETOM BRANCO -->
+    <div class="card-produto" data-id="moletom-branco">
+
+        <div class="imagem-produto">
+            <img src="../img/produtos/moletombranco.png" alt="Moletom Branco DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Moletom Branco DripLab</h3>
+
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Branco</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+
+    </div>
+
+    <!-- MOLETOM PRETO -->
+    <div class="card-produto" data-id="moletom-preto">
+
+        <div class="imagem-produto">
+            <img src="../img/produtos/moletompreto.png" alt="Moletom Preto DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Moletom Preto DripLab</h3>
+
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Preto</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+
+    </div>
+
+    <!-- MOLETOM ROSA -->
+    <div class="card-produto" data-id="moletom-rosa">
+
+        <div class="imagem-produto">
+            <img src="../img/produtos/moletomrosa.png" alt="Moletom Rosa DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Moletom Rosa DripLab</h3>
+
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Rosa</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+
+    </div>
+
+    <!-- MOLETOM ROXO -->
+    <div class="card-produto" data-id="moletom-roxo">
+
+        <div class="imagem-produto">
+            <img src="../img/produtos/moletomroxo.png" alt="Moletom Roxo DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Moletom Roxo DripLab</h3>
+
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Roxo</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- GALERIA DE CAMISAS -->
+
+<h2 id="drip">CAMISAS DRIPLAB</h2>
+
+<div class="galeria-pecas">
+
+    <!-- CAMISA AZUL -->
+    <div class="card-produto" data-id="camiseta-azul">
+        <div class="imagem-produto">
+            <img src="	../img/produtos/camisaazul.png" alt="Camiseta Azul DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Camiseta Azul DripLab</h3>
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Azul</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+    </div>
+
+    <!-- CAMISA BRANCA -->
+    <div class="card-produto" data-id="camiseta-branca">
+        <div class="imagem-produto">
+            <img src="../img/produtos/camisabranca.png" alt="Camiseta Branca DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Camiseta Branca DripLab</h3>
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Branco</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+    </div>
+
+    <!-- CAMISA CINZA -->
+    <div class="card-produto" data-id="camiseta-cinza">
+        <div class="imagem-produto">
+            <img src="../img/produtos/camisacinza.png" alt="Camiseta Cinza DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Camiseta Cinza DripLab</h3>
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Cinza</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+    </div>
+
+    <!-- CAMISA PRETA -->
+    <div class="card-produto" data-id="camiseta-preta">
+        <div class="imagem-produto">
+            <img src="../img/produtos/camisapreta.png" alt="Camiseta Preta DripLab">
+        </div>
+
+        <div class="info-produto">
+            <h3>Camiseta Preta DripLab</h3>
+            <p class="preco-produto">R$ 99,90</p>
+
+            <label>Tamanho:</label>
+            <select class="opcao-tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label>Cor:</label>
+            <select class="opcao-cor">
+                <option>Preto</option>
+            </select>
+
+            <button class="botao-detalhes" type="button">
+                VER PRODUTO
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+    <section id="sobre">
+
+        <div id="quem-somos-nos">
+
+            <div id="info-quem-somos">
+
+                <h2>QUEM SOMOS NÓS?</h2>
+
+                <p>
+                    Somos uma loja de roupas estilo “street wear” voltadas para pessoas que queiram se reinventar e se expressar como pessoa por meio de seu estilo e não necessariamente têm condições financeiras para fazê-lo.
+
+                    <br>Essa iniciativa existe porque os criadores da marca acreditam que se vestir bem e para além disso, se identificar inteiramente com o que veste, é um direito universal.
+
+                    <br>Queremos que todas as pessoas possam se vestir do jeito que querem, fazendo com que o fator renda não seja um empecilho.
+
+                    <br>E para além disso, uma marca que atenda a todos os estilos e que seja de fácil acesso para todas as pessoas que desejam consumi-las é e será sempre o nosso diferencial.
+                </p>
+
+            </div>
+
+            <p class="email-home">
+                <img src="../img/icone-carta.png" alt="Ícone de carta">
+                driplabswag01@gmail.com
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/catalogo.js"></script>
+
+</body>
+</html>

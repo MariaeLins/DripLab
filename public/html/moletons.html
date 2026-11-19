@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Moletons | DripLab</title>
+</head>
+
+<body id="pagina-acessorios">
+
+    <div id="container-home">
+        <h3>ENTRE EM CONTATO CONOSCO!</h3>
+    </div>
+
+    <header id="cabecalho-home">
+
+        <div class="icones-superiores">
+
+            <div class="jogo-container">
+                <a href="https://gb-rodrigues.itch.io/drip-lab" class="botao-jogo">
+                    <img src="../img/icone-jogo.png" alt="Jogo">
+                </a>
+            </div>
+
+            <div class="atalhos-direita">
+
+                <div class="pesquisa-container">
+                    <button class="botao-lupa" id="abrir-pesquisa" type="button">
+                        <img src="../img/icone-pesquisa.png" alt="Pesquisar">
+                    </button>
+                </div>
+
+                <a href="./perfil.html" class="botao-perfil">
+                    <img src="../img/icone-perfil-home.png" alt="Meu perfil">
+                </a>
+
+                <a href="./carrinho.html" class="botao-carrinho">
+                    <img src="../img/icone-carrinho.png" alt="Carrinho">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="logo-home">
+            <img src="../img/DripLab_Logo.gif" alt="Logo DripLab" width="600">
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./pecas.html">CAMISAS</a></li>
+                <li><a href="./moletons.html">MOLETONS</a></li>
+                <li><a href="./novidades.html">NOVIDADES</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="janela-pesquisa">
+
+        <div class="conteudo-pesquisa">
+
+            <form id="form-pesquisa">
+
+                <input
+                    type="text"
+                    id="campo-pesquisa"
+                    placeholder="Pesquisar swag..."
+                >
+
+                <button type="submit" class="botao-enviar">⌕</button>
+
+            </form>
+
+            <section class="pesquisas-recentes">
+                <p>Produtos vistos recentemente</p>
+                <div class="itens-recentes" id="itens-recentes"></div>
+            </section>
+
+            <section class="resultados-pesquisa" id="resultados-pesquisa" style="display:none">
+                <p class="titulo-resultados">Resultados da pesquisa</p>
+                <div class="lista-resultados" id="lista-resultados"></div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <main id="conteudo-acessorios">
+
+        <h1 class="titulo-categoria">MOLETONS DRIPLAB</h1>
+
+        <section class="galeria-acessorios" id="lista-acessorios"></section>
+
+    </main>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/catalogo.js"></script>
+
+</body>
+</html>
